@@ -1,0 +1,40 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: silver;
+  font: 1.4rem sans-serif;
+  user-select: none;
+  white-space: nowrap;
+}
+
+canvas {
+  background: white;
+  border: 1px solid gray;
+  cursor: crosshair;
+  margin-top: 0.8rem;
+}
+
+aside {
+  padding: 2.4rem;
+}
+
+button, input {
+  padding: 0.4rem;
+}
+
+p {
+  margin-top: 2.4rem;
+}
+
+.flex-container {
+  display: flex;
+  align-items: flex-start;
+}

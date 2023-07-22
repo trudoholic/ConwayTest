@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Conway's Game of Life</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <div class="flex-container">
+      <aside>
+        <h3>Conway's Game of Life</h3>
+        <p>&nbsp;</p>
+        <button id="b_run" onclick="toggleRun()">Run</button>
+        <p id="step">Step: 0</p>
+        <p id="time">Generation time: 0.0000 ms</p>
+        <p>World Size:</p>
+        <input id="i_size" type="number" min="8" max="1024" value="100" oninput="this.value = Math.abs(this.value)" />
+        <button id="b_size" onclick="doSize()">Set</button>
+        <p>Delay:</p>
+        <input id="i_delay" type="number" min="0" value="500" oninput="this.value = Math.abs(this.value)" />
+        <button onclick="doDelay()">Set</button>
+        <p>Random cells:</p>
+        <input id="i_add" type="number" min="0" value="12" oninput="this.value = Math.abs(this.value)" />
+        <button id="b_add" onclick="addRandomCells()">Add</button>
+        <p>or add with mouse click<br />(while not running)</p>
+      </aside>
+      <canvas id="canvas">This text is displayed if your browser does not support HTML5 Canvas.</canvas>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
